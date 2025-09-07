@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize Your Tasks</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="kanban-title">Kanban Board</h1>
+
+        <!-- add-task UI -->
+        <div class="add-task">
+            <input id="newTaskInput" type="text" placeholder="add new task..." aria-label="Add new task" />
+            <button id="addTaskBtn">+</button>
+        </div>
+
+
+        <div class="board">
+            <!-- Board 1 -->
+            <div class="list" id="list1">
+                <h2>To Do</h2>
+                <div class="card" id="card1" draggable="true">Drag and Drop</div>
+                <div class="card" id="card2" draggable="true">Buid Project</div>
+            </div>
+
+            <!-- BOARD 2 -->
+            <div class="list" id="list2">
+                <h2>In Progress</h2>
+                <div class="card" id="card3" draggable="true">Learning</div>
+            </div>
+
+            <!-- BOARD 3 -->
+            <div class="list" id="list3">
+                <h2>Done</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
